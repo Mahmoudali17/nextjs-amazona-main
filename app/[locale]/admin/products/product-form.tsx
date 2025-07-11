@@ -276,15 +276,15 @@ const ProductForm = ({
                       <FormControl>
                         <UploadButton
                           endpoint='imageUploader'
-                          onClientUploadComplete={(res: { url: string }[]) => {
-                            form.setValue('images', [...images, res[0].url])
-                          }}
-                          onUploadError={(error: Error) => {
-                            toast({
-                              variant: 'destructive',
-                              description: `ERROR! ${error.message}`,
-                            })
-                          }}
+                          // onClientUploadComplete={(res: { url: string }[]) => {
+                          //   form.setValue('images', [...images, res[0].url])
+                          // }}
+                          // onUploadError={(error: Error) => {
+                          //   toast({
+                          //     variant: 'destructive',
+                          //     description: `ERROR! ${error.message}`,
+                          //   })
+                          // }}
                         />
                       </FormControl>
                     </div>

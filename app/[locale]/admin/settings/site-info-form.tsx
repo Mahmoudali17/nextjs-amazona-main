@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { toast } from '@/hooks/use-toast'
+// import { toast } from '@/hooks/use-toast'
 import { UploadButton } from '@/lib/uploadthing'
 import { ISettingInput } from '@/types'
 import { TrashIcon } from 'lucide-react'
@@ -97,15 +97,15 @@ export default function SiteInfoForm({
               <UploadButton
                 className='!items-start py-2'
                 endpoint='imageUploader'
-                onClientUploadComplete={(res) => {
-                  form.setValue('site.logo', res[0].url)
-                }}
-                onUploadError={(error: Error) => {
-                  toast({
-                    variant: 'destructive',
-                    description: `ERROR! ${error.message}`,
-                  })
-                }}
+                // onClientUploadComplete={(res) => {
+                //   form.setValue('site.logo', res[0].url)
+                // }}
+                // onUploadError={(error: Error) => {
+                //   toast({
+                //     variant: 'destructive',
+                //     description: `ERROR! ${error.message}`,
+                //   })
+                // }}
               />
             )}
           </div>

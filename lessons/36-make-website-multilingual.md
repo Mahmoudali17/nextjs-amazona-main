@@ -244,7 +244,7 @@ import { i18n } from '@/i18n-config'
         pageSize: 9,
       },
       site: {
-        name: 'NxtAmzn',
+        name: 'Pedri',
         description:
           'NxtAmzn is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.',
         keywords: 'Next Ecommerce, Next.js, Tailwind CSS, MongoDB',
@@ -2287,7 +2287,7 @@ import { getSetting } from './setting.actions'
 ```ts
 -export const SERVER_URL =
 -  process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
--export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'NxtAmzn'
+-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Pedri'
 -export const APP_SLOGAN =
 -  process.env.NEXT_PUBLIC_APP_SLOGAN || 'Spend less, enjoy more.'
 -export const APP_DESCRIPTION =
